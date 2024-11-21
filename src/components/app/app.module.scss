@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-inline: clamp(1.875rem, -3.8393rem + 11.9048vw, 6.875rem);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-inline: clamp(1.25rem, 0.8036rem + 2.2321vw, 1.875rem);
+  }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  // font
+  --font-family-primary: 'Oswald', system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  --font-family-secondary: Arial, Avenir, Helvetica, sans-serif;
+
+  // font-weight
+  --font-weight-primary: 400;
+
+  // font-size primary
+  --font-size-d: 16px;
+  --font-size-m: 14px;
+
+  // font-size
+  --font-size-xl-d: 60px;
+  --font-size-xl-m: 36px;
+
+  --font-size-l-d: 36px;
+  --font-size-l-m: 24px;
+
+  --font-size-m-d: 16px;
+  --font-size-m-m: 20px;
+
+  --font-size-s-d: 14px;
+  --font-size-s-m: 20px;
+
+  --font-size-xs-d: 14px;
+  --font-size-xs-m: 12px;
+
+  // colors
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #000000;
+  --color-accent: #68b738;
+  --color-accent-hover: #5eaa2f;
+  --color-secondary: #f2f2f2;
+  --color-secondary-light: #666666;
+  --color-secondary-dark: #444444;
+  --color-secondary-darkness: #222222;
+  --color-secondary-special: #cdcdcd;
+}
