@@ -18,7 +18,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/pages/*"],
+      "@assets": ["src/assets/*"],
+      "@ui/*": ["src/components/UI/*"],
+      "@pages-ui/*": ["src/components/UI/pages-ui/*"]
+    }
   },
   "include": ["src"]
 }
