@@ -1,0 +1,60 @@
+{
+  "catalog": [
+    {
+      "id": 0,
+      "name": "Cat Energy PRO",
+      "image": "http://localhost:5173/assets/catalog/catalog-1.png",
+      "weight": 500,
+      "flavor": "Курица",
+      "price": 700
+    },
+    {
+      "id": 1,
+      "name": "Cat Energy PRO",
+      "image": "http://localhost:5173/assets/catalog/catalog-2.png",
+      "weight": 1000,
+      "flavor": "Курица",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "name": "Cat Energy PRO",
+      "image": "http://localhost:5173/assets/catalog/catalog-3.png",
+      "weight": 500,
+      "flavor": "Рыба",
+      "price": 800
+    },
+    {
+      "id": 3,
+      "name": "Cat Energy PRO",
+      "image": "http://localhost:5173/assets/catalog/catalog-4.png",
+      "weight": 1000,
+      "flavor": "Рыба",
+      "price": 1200
+    },
+    {
+      "id": 4,
+      "name": "Cat Energy SLIM",
+      "image": "http://localhost:5173/assets/catalog/catalog-5.png",
+      "weight": 500,
+      "flavor": "Гречка",
+      "price": 500
+    },
+    {
+      "id": 5,
+      "name": "Cat Energy SLIM",
+      "image": "http://localhost:5173/assets/catalog/catalog-6.png",
+      "weight": 1000,
+      "flavor": "Гречка",
+      "price": 800
+    },
+    {
+      "id": 6,
+      "name": "Cat Energy SLIM",
+      "image": "http://localhost:5173/assets/catalog/catalog-7.png",
+      "weight": 500,
+      "flavor": "Рис",
+      "price": 600
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 .app {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   margin: 0 auto;
   padding-inline: clamp(1.875rem, -3.8393rem + 11.9048vw, 6.875rem);
 }

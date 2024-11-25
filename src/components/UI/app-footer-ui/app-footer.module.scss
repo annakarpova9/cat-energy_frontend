@@ -1,3 +1,125 @@
 .footer {
-  background-color: yellow;
+  position: relative;
+  width: 100%;
+}
+
+.addressContainer {
+  position: absolute;
+  inset: 100px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 87px;
+  width: 570px;
+  height: 201px;
+  background-color: var(--color-primary-light);
+  z-index: 1;
+
+  &Text {
+    max-width: 163px;
+    min-width: 140px;
+    font-size: clamp(
+      var(--font-size-m-m),
+      0.7421rem + 1.0582vw,
+      var(--font-size-m-d)
+    );
+    text-transform: uppercase;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(0.625rem, -0.0198rem + 2.6455vw, 1.25rem);
+  max-width: 159px;
+  min-width: 140px;
+  font-family: var(--font-family-secondary);
+  line-height: 20px;
+  color: var(--color-secondary-dark);
+}
+
+.mapContainer {
+  height: 400px;
+  min-height: 362px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.infoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  padding-inline: clamp(1.875rem, -3.8393rem + 11.9048vw, 6.875rem);
+  padding-block-start: clamp(3.375rem, 3.0179rem + 0.744vw, 3.6875rem);
+  padding-block-end: clamp(1.375rem, -1.0754rem + 10.0529vw, 3.75rem);
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  color: var(--color-secondary-light);
+}
+
+.social:hover {
+  opacity: 0.8;
+}
+
+.linkSchool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  font-family: var(--font-family-secondary);
+  color: var(--color-secondary-dark);
+}
+
+@media (max-width: 700px) {
+  .infoContainer {
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .socialList::before {
+    content: '';
+    position: absolute;
+    inset: 35% 0 0 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-secondary-special);
+  }
+
+  .socialList::after {
+    content: '';
+    position: absolute;
+    inset: 65% 0 0 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-secondary-special);
+  }
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    padding-inline: clamp(1.25rem, 0.8036rem + 2.2321vw, 1.875rem);
+    padding-block-start: clamp(2.4375rem, 1.4702rem + 3.9683vw, 3.375rem);
+  }
+
+  .addressContainer {
+    position: inherit;
+    inset: 0;
+    gap: 0;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    padding-inline: clamp(0rem, -2.5794rem + 10.582vw, 2.5rem);
+  }
 }

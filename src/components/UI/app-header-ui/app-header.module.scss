@@ -1,3 +1,138 @@
 .header {
-  background-color: red;
+  //background-color: green;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: clamp(1.5rem, -0.5714rem + 4.3155vw, 3.3125rem);
+}
+
+.logo {
+  display: inline-block;
+
+  &Desktop {
+    display: block;
+  }
+  &Tablet,
+  &Mobile {
+    display: none;
+  }
+}
+
+.burgerIcon {
+  display: none;
+}
+
+.links {
+  display: flex;
+  gap: clamp(1.875rem, 1.5203rem + 0.8108vw, 2.25rem);
+  justify-content: flex-end;
+  font-size: clamp(
+    var(--font-size-m-t),
+    0.9821rem + 0.2976vw,
+    var(--font-size-m-d)
+  );
+  line-height: normal;
+  text-transform: uppercase;
+  //color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.link_active {
+  //border-block-end: 2px solid var(--color-primary-light);
+  border-block-end: 2px solid var(--color-primary-dark);
+}
+
+@media (hover: hover) {
+  .logoTablet:hover,
+  .logoDesktop:hover,
+  .logoMobileIcon:hover,
+  .logoMobileText:hover {
+    opacity: 0.8;
+  }
+
+  .logoTablet:active,
+  .logoDesktop:active,
+  .logoMobileIcon:active,
+  .logoMobileText:active {
+    opacity: 0.6;
+  }
+
+  .link:hover {
+    opacity: 0.6;
+  }
+  .link:active {
+    opacity: 0.3;
+  }
+}
+
+@media (hover: none) {
+  .link:active {
+    opacity: 0.6;
+  }
+
+  .logoTablet:active,
+  .logoDesktop:active,
+  .logoMobileIcon:active,
+  .logoMobileText:active {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding-block-start: clamp(0.6875rem, 0.1071rem + 2.9018vw, 1.5rem);
+  }
+
+  .logoDesktop {
+    display: none;
+  }
+
+  .logoTablet {
+    display: block;
+  }
+
+  .links {
+    font-size: clamp(
+      var(--font-size-m-t),
+      1.3393rem + -0.4464vw,
+      var(--font-size-m-d)
+    );
+    line-height: 24px;
+    color: var(--color-primary-dark);
+  }
+
+  .link_active {
+    border-block-end: 2px solid var(--color-accent);
+  }
+}
+
+@media (max-width: 700px) {
+  .burgerIcon {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .logoTablet {
+    display: none;
+  }
+
+  .logoMobile {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    justify-content: space-between;
+  }
+
+  .links {
+    font-weight: var(--font-weight-medium);
+    line-height: 100%;
+  }
 }
