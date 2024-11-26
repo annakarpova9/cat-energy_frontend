@@ -61,21 +61,23 @@ export const AppFooterUI: FC = () => {
             </Map>
           </FullBg>
           <FullBg className={s.infoContainer}>
-            <LogoMCe width={128} height={24} />
-            <div className={s.socialList}>
-              <a href="#" className={s.social}>
-                <IconVK width={30} />
-              </a>
-              <a href="#" className={s.social}>
-                <IconIns width={23} />
-              </a>
-              <a href="#" className={s.social}>
-                <IconFB width={28} />
-              </a>
-            </div>
-            <div className={s.linkSchool}>
-              <p>HTML Academy</p>
-              <LogoSchool width={27} />
+            <div className={s.info}>
+              <LogoMCe width={128} height={24} />
+              <div className={s.socialList}>
+                <a href="#" className={s.social}>
+                  <IconVK width={30} />
+                </a>
+                <a href="#" className={s.social}>
+                  <IconIns width={23} />
+                </a>
+                <a href="#" className={s.social}>
+                  <IconFB width={28} />
+                </a>
+              </div>
+              <div className={s.linkSchool}>
+                <p>HTML Academy</p>
+                <LogoSchool width={27} />
+              </div>
             </div>
           </FullBg>
         </footer>
