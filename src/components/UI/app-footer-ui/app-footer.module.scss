@@ -1,7 +1,10 @@
 .footer {
   position: relative;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
 
 .addressContainer {
   position: absolute;
@@ -51,12 +54,17 @@
 }
 
 .infoContainer {
-  position: relative;
+  background-color: var(--color-secondary);
+}
+
+.info {
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-secondary);
-  padding-inline: clamp(1.875rem, -3.8393rem + 11.9048vw, 6.875rem);
+  margin: 0 auto;
+  //padding-inline: clamp(1.875rem, -3.8393rem + 11.9048vw, 6.875rem);
   padding-block-start: clamp(3.375rem, 3.0179rem + 0.744vw, 3.6875rem);
   padding-block-end: clamp(1.375rem, -1.0754rem + 10.0529vw, 3.75rem);
 }
@@ -83,7 +91,7 @@
 }
 
 @media (max-width: 700px) {
-  .infoContainer {
+  .info {
     flex-direction: column;
     gap: 55px;
   }
@@ -108,7 +116,7 @@
 }
 
 @media (max-width: 768px) {
-  .infoContainer {
+  .info {
     padding-inline: clamp(1.25rem, 0.8036rem + 2.2321vw, 1.875rem);
     padding-block-start: clamp(2.4375rem, 1.4702rem + 3.9683vw, 3.375rem);
   }

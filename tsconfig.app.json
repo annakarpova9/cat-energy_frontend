@@ -24,7 +24,9 @@
       "@pages/*": ["src/pages/*"],
       "@assets": ["src/assets/*"],
       "@ui/*": ["src/components/UI/*"],
-      "@pages-ui/*": ["src/components/UI/pages-ui/*"]
+      "@components/*": ["src/components/*"],
+      "@pages-ui/*": ["src/components/UI/pages-ui/*"],
+
     }
   },
   "include": ["src"]
